@@ -1,0 +1,197 @@
+<b>
+    <h2>Laporan Data SK </h2>
+</b>
+<table border="2">
+    <thead>
+
+        <tr>
+
+            <th>NO SK</th>
+            <th>JENIS</th>
+            <th>NAMA</th>
+            <th>ALAMAT</th>
+            <th>PIC</th>
+            <th>NO TELP</th>
+            <th>STATUS</th>
+            <th>TELEGRAM ID</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                                            <td>APO/0811/2021</td>
+                                            <td>Izin Apotek</td>
+                                            <td>Apotek Melody</td>
+                                            <td>Jl. Sultan Adam No. 20 RT 12</td>
+                                            <td>Nada</td>
+                                            <td>085250976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>APO/5420/DPMPTSP/2021</td>
+                                            <td>Izin Apotek</td>
+                                            <td>Apotek Perintis</td>
+                                            <td>Jl. Kuripan No. 51 RT 12</td>
+                                            <td>Halimah Sri Ningsih</td>
+                                            <td>08525976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>APO/8852/DPMPTSP/2021</td>
+                                            <td>Izin Apotek</td>
+                                            <td>Apotik Firdaus</td>
+                                            <td>Jl. Sultan Adam No. 50 Banjarmasin</td>
+                                            <td>FAUZI YUSA RAHMAN </td>
+                                            <td>085250976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>AU/0080/DPMPTSP/2021</td>
+                                            <td>Izin Angkutan Umum</td>
+                                            <td>PT MARGASANA BANUA</td>
+                                            <td>Jl. Lingkar Dalam Selatan No. 60 RT 12</td>
+                                            <td>SAMAD</td>
+                                            <td>085250976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>IUJK/6651/DPMPTSP/2021</td>
+                                            <td>Izin Jasa Konstruksi</td>
+                                            <td>CV INDO JAYA CONS</td>
+                                            <td>Jl. Lingkar Dalam Selatan No. 50</td>
+                                            <td>Abdul Aziz</td>
+                                            <td>085250976321</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>KLI/1208/DPMPTSP/2021</td>
+                                            <td>Izin Klinik</td>
+                                            <td>KLINIK FIRDAUS</td>
+                                            <td>Jl. Dahlia Gang Budaya  No.49 RT. 28</td>
+                                            <td>Indri Sri Yani</td>
+                                            <td>085250976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>LAB/7895/DPMPTSP</td>
+                                            <td>Izin Operasional Laboraturium</td>
+                                            <td>Love Aphotecary</td>
+                                            <td>Jl. Sultan Adam No. 58</td>
+                                            <td>Dr. Shinta Wiguna</td>
+                                            <td>08115191800</td>
+                                            <td>TERKIRIM</td>
+                                            <td>1919783439</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAR/0811/2021</td>
+                                            <td>Izin Pariwisata</td>
+                                            <td>Hotel Zuri Exspress</td>
+                                            <td>Jl. A. Yani Km 6</td>
+                                            <td>Intan</td>
+                                            <td>08525976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAR/7895/2021</td>
+                                            <td>Izin Pariwisata</td>
+                                            <td>RM Cita Rasa</td>
+                                            <td>Jl. Manggis Komplek Brawijaya No2</td>
+                                            <td>Joshua</td>
+                                            <td>085250976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAR/9887/DPMPTSP/2021</td>
+                                            <td>Izin Pariwisata</td>
+                                            <td>RM CAK HARI</td>
+                                            <td>Jl. Gatot Subroto No. 86 Kebun Bunga</td>
+                                            <td>HARIANTO</td>
+                                            <td>085250976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAUD/1120/DPMPTSP/2021</td>
+                                            <td>Izin Operasional Pendidikan</td>
+                                            <td>Yayasan Ananda</td>
+                                            <td>Jl. Sungai Lulut Komplek Persada No 20 RT 11</td>
+                                            <td>Khairul Sofyan</td>
+                                            <td>08525976322</td>
+                                            <td>SK</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAUD/1208/DPMPTSP/2021</td>
+                                            <td>Izin Operasional Pendidikan</td>
+                                            <td>Yayasan Kartika</td>
+                                            <td>Jl. Gatot Subroto No. 80 RT 15</td>
+                                            <td>Karmila Sari</td>
+                                            <td>085250976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PAUD/5250/DPMPTSP/2021</td>
+                                            <td>Izin Operasional Pendidikan</td>
+                                            <td>Yayasan Kasih Bunda</td>
+                                            <td>Jl. Cemara Raya Komplek Permata No. 7</td>
+                                            <td>Sunarti Cahya</td>
+                                            <td>08525976322</td>
+                                            <td>TERKIRIM</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>PBG/1275/DPMPTSP/2021</td>
+                                            <td>Izin Persetujuan Bangunan Gedung</td>
+                                            <td>RUMAH TINGGAL</td>
+                                            <td>Jl. Gerilya Komplek Graha Mahatama Blok Kuwini No. 40 RT. 23</td>
+                                            <td>JUMBERI</td>
+                                            <td>085250976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>REK/8853/DPMPTSP/2021</td>
+                                            <td>Izin Reklame</td>
+                                            <td>PT Rajawali Perkasa </td>
+                                            <td>Jl. A. Yani KM 3</td>
+                                            <td>Galih Pratama </td>
+                                            <td>08525976322</td>
+                                            <td>PENGAMBILAN_SENDIRI</td>
+                                            <td>572660527</td>
+            </tr>
+
+                    <tr>
+                                            <td>REK/9982/DPMPTSP/2021</td>
+                                            <td>Izin Reklame</td>
+                                            <td>RAMAYANA SENTRA ANTASARI</td>
+                                            <td>Jl. P. Antasari No. 71</td>
+                                            <td>Surianto Hadi</td>
+                                            <td>085250976322</td>
+                                            <td>PENDING</td>
+                                            <td>572660527</td>
+            </tr>
+
+                </tfoot>
+</table>

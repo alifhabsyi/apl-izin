@@ -1,0 +1,60 @@
+<b>
+    <h2>List Berkas SK Terbit Perizinan</h2>
+</b>
+<table border="2">
+    <thead>
+        
+        <tr>
+            <th>ID Registrasi</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Kelurahan</th>
+            <th>Kecamatan</th>
+            <th>Kota</th>
+            <th>Provinsi </th>
+            <th>Tanggal Registrasi</th>
+            <th>PIC</th>
+            <th>NO Telpon</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+                <tr>
+                <td>
+                    R1948U
+                </td>
+                <td>
+                    Test Laboratorium
+                </td>
+                <td>
+                    Test Alamat
+                </td>
+                <td>
+                    Test Kelurahan
+                </td>
+                <td>
+                    Test Kecamatan
+                </td>
+                <td>
+                    Test Kota
+                </td>
+                <td>
+                    Test Provinsi
+                </td>
+                <td>
+                    2021-08-07
+                </td>
+                <td>
+                    Muhammad Alief Habsyi
+                </td>
+                <td>
+                    087777444435
+                </td>
+                <td>
+                    SKK
+                </td>
+                </tr>
+                
+                    </tfoot>
+</table>

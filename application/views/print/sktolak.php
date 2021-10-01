@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Halaman Print </title>
+</head>
+<style type="text/css">
+    /* Kode CSS Untuk PAGE ini dibuat oleh http://jsfiddle.net/2wk6Q/1/ */
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /* background-color: #FAFAFA; */
+        font: 12pt "Times New Roman";
+    }
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 10mm auto;
+        /* border: 1px #D3D3D3 groove; */
+        /* border-radius: 5px; */
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subpage {
+        padding: 0.5cm;
+        margin-top: 1cm;
+        /* border: 5px red groove; */
+        height: 252mm;
+        /* outline: 2cm #FFEAEA groove; */
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    @media print {
+
+        html,
+        body {
+            width: 210mm;
+            height: 297mm;
+        }
+
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+</style>
+
+<body>
+    <div class="book">
+        <div class="page">
+        <table width="100%">
+                    <tr>
+                        <td>
+                            <img src="<?php echo base_url() ?>/assets/Picture1.png"> </img>
+
+                        </td>
+                        <td colspan=10 align="center">
+                            <B>PEMERINTAH KOTA BANJARMASIN<br>
+                                DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU</b><br>
+                            Jl. Sultan Adam RT.28 No. 49 Kota Banjarmasin 70122 <br>
+                            Telepon/Faksimile (0511)3305525<br>
+                            Pos-el dpmptsp.banjarmasin@gmail.com<br>
+                        </td>
+                    </tr>
+                </table><hr size="5%" color="#000000" >
+            <div class="subpage">
+                <?php
+                foreach ($reg as $a) :
+                    $ID_REG = $a->ID_REG;
+                    if ($a->JENIS == "lab") {
+                        $JENIS = " Operasional Laboratorium";
+                        $BIDANG = "Kesehatan";
+                    } else if ($a->JENIS == "pend") {
+                        $JENIS = " Operasional Pendidikan";
+                        $BIDANG = "Pendidikan";
+                    } else if ($a->JENIS == "kons") {
+                        $JENIS = " Jasa Konstruksi";
+                        $BIDANG = "Konstruksi";
+                    }
+                    $NAMA = $a->NAMA;
+                    $ALAMAT = $a->ALAMAT;
+                    $KELURAHAN = $a->KELURAHAN;
+                    $KECAMATAN = $a->KECAMATAN;
+                    $KOTA = $a->KOTA;
+                    $PROVINSI = $a->PROVINSI;
+                    $PENANGGUNG_JAWAB = $a->PENANGGUNG_JAWAB;
+                    $NO_TELP = $a->NO_TELP;
+                endforeach;
+                foreach ($stbap as $b) :
+                    $NO_SURAT = $b->NO_SURAT;
+                    $TGL_ST = $b->TGL_ST;
+                    $TGL_BAP = $b->TGL_BAP;
+                    $KETERANGAN_BAP = $b->KETERANGAN_BAP;
+                    $HASIL = $b->HASIL;
+                    $NO_BAP = $b->NO_BAP;
+
+
+                endforeach;
+                // var_dump($stbap);exit;
+                foreach ($nip1 as $y) :
+                    $NAMAP1 = $y->NAMA;
+                    $NIPP1 =  $y->NIP;
+                    $JABATANP1 =  $y->JABATAN;
+                endforeach;
+                foreach ($nip2 as $z) :
+                    $NAMAP2 = $z->NAMA;
+                    $NIPP2 =  $z->NIP;
+                    $JABATANP2 =  $z->JABATAN;
+                endforeach;
+                // foreach ($sk as $n) :
+                //     $NO_SK = $n->NO_SK;
+                //     $TGL_SK =  $n->TGL_SK;
+                //     $NIP_PETUGAS =  $n->NIP_PETUGAS;
+                // endforeach;
+                ?>
+                
+                <table>
+                    <tr>
+                        <td align="left">
+                            Nomor </td>
+                        <td>: <?php echo $NO_BAP ?>
+                        </td>
+                        <td align="right">
+                            Banjarmasin, <?php echo $TGL_BAP ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            Lampiran </td>
+                        <td>: -
+                        </td>
+                        <td align="right">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            Perihal
+                        </td>
+                        <td>: Penolakan Permohonan Izin <?php echo $JENIS ?>
+                        </td>
+                        <td align="right">
+
+                        </td>
+                    </tr>
+                </table>
+
+<br>
+                
+                <table align="right">
+                    <tr>
+                        <td align="right">
+                            Kepada Yth. <b style="color:whiter;opacity:0">871298223342342319</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sdra./Sdri. <?php echo $PENANGGUNG_JAWAB ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Di -
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b style="color:white;opacity:0">12122</b>Banjarmasin
+                        </td>
+                    </tr>
+                </table>
+
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan Berita Acara hasil pemeriksaan teknis lapangan oleh Tim Peninjau Lapangan dan Hasil Penelitian Teknis oleh Tim Teknis Perizinan Pada Tanggal <?php echo $TGL_BAP ?> tentang Permohonan Izin <?php echo $JENIS ?> sebagai berikut :
+                    
+                <table>
+                    <tr>
+
+                        <td style="color:white;opacity:0">897987798987</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><?php echo $NAMA ?></td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><?php echo $ALAMAT ?></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kelurahan</td>
+                        <td>:</td>
+                        <td><?php echo $KELURAHAN ?></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kecamatan</td>
+                        <td>:</td>
+                        <td><?php echo $KECAMATAN ?></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kota</td>
+                        <td>:</td>
+                        <td><?php echo $KOTA ?></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Provinsi</td>
+                        <td>:</td>
+                        <td><?php echo $PROVINSI ?></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pemilik</td>
+                        <td>:</td>
+                        <td><?php echo $PENANGGUNG_JAWAB ?></td>
+
+                    </tr>
+
+
+                </table>
+                Sesuai persyaratan teknis dan Berita Acara Hasil Survey dan Identifikasi Lapangan, maka bangunan yang Saudara mohon TIDAK DAPAT Kami terbitkan Izin Laboraturium nya.
+
+                Adapun alasan penolakan dikarenakan hal-hal sebagai berikut :
+                <br>
+                </br>
+                <?php echo $KETERANGAN_BAP; ?>
+                <br>
+                <br>
+                <table ALIGN=RIGHT>
+                    <tr>
+                        <td>Dikeluarkan di : Banjarmasin </td>
+
+                    </tr>
+                    <tr>
+                        <td>Pada Tanggal : <?php echo $TGL_BAP ?> </td>
+
+                    </tr>
+                    <tr style="color:white;opacity:0">
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td rowspan="1" align="center">Kepala Dinas,</td>
+
+                    </tr>
+                    <tr>
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+                        <td rowspan="1" style="color:white;opacity:0">
+                            123123
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" align="center"><b>Ir. MURAYATNA, MT</b></td>
+
+                    </tr>
+                    <tr>
+
+                        <td align="center">Pembina Utama Muda</td>
+
+                    </tr>
+                    <tr>
+
+                        <td rowspan="1" align="center">NIP. 19620709 199003 1 008 </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    window.print();
+</script>
